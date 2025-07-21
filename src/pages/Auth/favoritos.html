@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BuyGe - Meus Favoritos</title>
+  <link rel="stylesheet" href="favoritos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BuyGe</div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Todas as categorias <i class="fas fa-chevron-down dropdown-icon"></i></a>
+          <div class="dropdown-menu">
+            <a href="#">eletrônicos</a>
+            <a href="#">cosplays</a>
+            <a href="#">canecas</a>
+            <a href="#">capinhas para celular</a>
+            <a href="#">lentes de contato</a>
+          </div>
+        </li>
+        <li><a href="#">One Piece</a></li>
+        <li><a href="#">Solo Leveling</a></li>
+        <li><a href="#">Dandadan</a></li>
+        <li><a href="#">To be hero x</a></li>
+        <li><a href="#">Naruto</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="fas fa-heart"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div class="user-greeting">Olá, Nome do Usuário!</div>
+      <ul>
+        <li>👤 Meus Dados</li>
+        <li>📍 Endereço</li>
+        <li>💳 Cartões</li>
+        <li>🛍️ Minhas Compras</li>
+        <li>🔒 Segurança</li>
+        <li>🏬 Minha Loja Virtual</li>
+      </ul>
+    </aside>
+
+    <section class="favorites">
+      <h1>Meus Favoritos</h1>
+      <div class="product-grid">
+        <!-- Produto 1 -->
+        <div class="product-card">
+          <button class="close-btn">×</button>
+          <div class="product-img"><i class="fas fa-image"></i></div>
+          <div class="product-info">
+            <p>Categoria de Produto</p>
+            <p><strong>Nome do Produto</strong></p>
+            <p>Nome do Vendedor</p>
+            <p><strong>Valor do Produto</strong></p>
+          </div>
+          <button class="add-cart">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Copiar o bloco acima para mais produtos -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BuyGe. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Cadastro</h1>
+            
+            <div class="welcome-section">
+                <h2>Bem vindo de volta!</h2>
+                <p>Para se manter conectado conosco, faça o login com seus dados pessoais.</p>
+                
+                <a href="login.html" class="button login-button">Entrar</a>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <h2>Criar conta</h2>
+            
+            <form class="register-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="date" placeholder="Data de nascimento" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" placeholder="Confirmar email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" placeholder="Confirmar senha" required>
+                </div>
+                
+                <div class="terms-section">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-label">Termos</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f2e7f3;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #a165b1;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar-header p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.sidebar-header span {
+  font-size: 0.8rem;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu-title {
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.menu ul li {
+  margin: 10px 0;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.menu ul li.active {
+  background-color: #c891d3;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-produto {
+  display: flex;
+  gap: 40px;
+}
+
+.form-esquerda, .form-direita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d7aadd;
+  color: white;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.imagens-upload {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.img-placeholder {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #772583;
+  font-size: 24px;
+  border: 2px dashed #772583;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 22px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #772583;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* Botão */
+button {
+  padding: 12px;
+  background-color: #a165b1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #772583;
+}

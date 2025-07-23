@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background-color: #772583;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px 10px;
+  outline: none;
+  width: 250px;
+}
+
+.search-bar i {
+  color: #772583;
+  padding: 0 10px;
+}
+
+.user-actions i {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.user-actions i:hover {
+  color: #ffcbff;
+}
+
+.menu-bar {
+  background-color: #9d3dac;
+  display: flex;
+  padding: 10px 2rem;
+  gap: 2rem;
+  color: white;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #c9a3d4;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.store-info p {
+  font-weight: bold;
+}
+
+.store-info small {
+  font-size: 12px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar .menu li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs a {
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: #333;
+}
+
+.tabs a.active {
+  font-weight: bold;
+  border-bottom: 3px solid #772583;
+  color: #772583;
+}
+
+.form-section h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.radio-group {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #c9a3d4;
+  border-radius: 5px;
+}
+
+.save-btn {
+  background-color: #772583;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.save-btn:hover {
+  background-color: #5a1a63;
+}

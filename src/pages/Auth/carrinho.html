@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - BuyGe</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <section class="cart">
+            <h1>Meu Carrinho</h1>
+            <div class="cart-container">
+                <div class="cart-left">
+                    <div class="cart-header">
+                        <span>Produtos</span>
+                        <span>Quantidade</span>
+                        <span>Valor</span>
+                        <span>Subtotal</span>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-image"></div>
+                        <span class="product-name">Nome do Produto</span>
+                        <div class="quantity-controls">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <span class="price">Valor do Produto</span>
+                        <span class="subtotal">Valor Total</span>
+                        <button class="remove-btn">×</button>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="cart-right">
+                    <div class="frete">
+                        <p><i class="fas fa-truck"></i> Calcular o Frete e o Prazo</p>
+                        <input type="text" placeholder="Digite o CEP aqui">
+                        <button class="btn-calcular">Calcular</button>
+                    </div>
+                    <div class="resumo">
+                        <p>Valor da Compra <span>R$ Valor</span></p>
+                        <p>Subtotal <span>R$ Valor</span></p>
+                        <p>Desconto <span>-R$ Valor</span></p>
+                        <p>Entrega <span>Grátis</span></p>
+                        <hr>
+                        <p class="total">Total <span>R$ Valor</span></p>
+                    </div>
+                    <div class="cupom">
+                        <p>Possui cupom de desconto? <span class="seta">︿</span></p>
+                        <input type="text" placeholder="Digite ou Cole o Código">
+                        <button>Aplicar</button>
+                    </div>
+                    <button class="btn-finalizar">Continuar a Compra</button>
+                </div>
+            </div>
+            <p class="add-more">Adicionar outros produtos</p>
+        </section>
+    </main>
+</body>
+</html>

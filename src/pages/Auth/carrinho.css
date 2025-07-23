@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #772583;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.user-actions a {
+    color: white;
+    margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #9d3dac;
+    padding: 10px 0;
+    border-radius: 4px;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.cart {
+    background-color: #f2e6f3;
+    padding: 3rem 5%;
+}
+
+.cart h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cart-left {
+    flex: 2;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 1rem 0;
+    border-bottom: 1px solid #999;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 6px;
+    background-image: url('https://via.placeholder.com/50');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-name {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    background-color: #c48fd2;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quantity-controls button {
+    padding: 0.5rem 1rem;
+    background: #a05ca9;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    padding: 0.5rem 1rem;
+    background-color: #d9a8e2;
+    color: white;
+}
+
+.price, .subtotal {
+    min-width: 120px;
+    text-align: center;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-right {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.frete p {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.frete input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #e4b9ed;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-calcular {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #a05ca9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resumo p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
+.resumo .total {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 1px solid #aaa;
+    padding-top: 0.5rem;
+}
+
+.cupom p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cupom input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #e4b9ed;
+    border: none;
+    border-radius: 4px;
+}
+
+.cupom button, .btn-finalizar {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    background-color: #a05ca9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-more {
+    text-align: right;
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
